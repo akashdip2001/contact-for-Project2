@@ -1,19 +1,15 @@
 function emailSend() {
 	var userName = document.getElementById('name').value;
-	var phone = document.getElementById('phone').value;
 	var email = document.getElementById('email').value;
-	var message = document.getElementById('message').value;
   
 	var messageBody = "Name: " + userName +
-	  "<br/> Phone: " + phone +
-	  "<br/> Email: " + email +
-	  "<br/> Message: " + message;
+	  "<br/> Email: " + email;
   
 	Email.send({
 		SecureToken: "f1fd93e4-78df-4474-8db5-80daf880c520",
 		To: "mail.me.akashdip2001@gmail.com",
 		From: "mail.me.akashdip2001@gmail.com",
-		Subject: "Contact freecadApp 2.o",
+		Subject: "Register Email for Project2",
 		Body: messageBody
 	}).then(
 	  message => {
