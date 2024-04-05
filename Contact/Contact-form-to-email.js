@@ -13,7 +13,7 @@ function emailSend() {
 		SecureToken: "f1fd93e4-78df-4474-8db5-80daf880c520",
 		To: "mail.me.akashdip2001@gmail.com",
 		From: "mail.me.akashdip2001@gmail.com",
-		Subject: "Register Email for Project2",
+		Subject: "Email for Project2 app",
 		Body: messageBody
 	}).then(
 	  message => {
