@@ -72,7 +72,7 @@
 	cursor: pointer;
   }
 
-#hashtag {
+.lastline {
     position: relative;
     padding-bottom: 20px;
     color: var(--accentColor);
