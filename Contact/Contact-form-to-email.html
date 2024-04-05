@@ -8,7 +8,6 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <style>
-  /* Add custom styles for the back arrow and close icon */
   body {
     margin: 0;
     padding: 0;
@@ -26,13 +25,13 @@
   .container {
     width: 100%;
     max-width: 400px;
-    background-color: rgba(255, 255, 255, 0.5); /* Adding opacity to the background */
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
     padding: 20px;
     text-align: center;
-    position: relative; /* Make container a relative position */
-    margin: 20px auto; /* Center the container */
-    z-index: 1; /* Ensure the form container is above the fireflies */
+    position: relative;
+    margin: 20px auto;
+    z-index: 1;
   }
 
   h2 {
@@ -40,7 +39,7 @@
   }
 
   textarea {
-  height: 70px; /* Adjust the height as needed */
+  height: 70px;
 }
 
   .back-arrow {
@@ -57,7 +56,6 @@
     cursor: pointer;
   }
 
-  /* Add styles for the interaction buttons */
   .interaction-button {
     padding: 10px 20px;
     margin: 5px;
@@ -86,7 +84,25 @@
     text-decoration: none;
     font-weight: bold;
   }
-  
+
+  .lastline {
+    position: relative;
+    padding-bottom: 20px;
+    color: var(--accentColor);
+    font-size: 1rem;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(90deg, var(--bgColor), var(--accentColor), var(--bgColor));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear var(--delay) infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}  
 </style>
 </head>
 <body>
